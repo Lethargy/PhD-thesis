@@ -27,5 +27,30 @@ for n in range(N):
     
 Y = X + Z
 
-np.save('data/tXYZ', (t,X,Y,Z))
-np.save('data/tSSIG', (t,S,SIG))
+p0 = 5.0
+lam = 2.0
+P = p0 + lam * Y
+V = p0 + lam * S
+
+# parameters
+np.save('data/p0', p0)
+np.save('data/lam', lam)
+np.save('data/N', N)
+
+# time
+np.save('data/t', t)
+
+# trades
+np.save('data/X', X)
+np.save('data/Y', Y)
+np.save('data/Z', Z)
+
+# prices
+np.save('data/P', P)
+np.save('data/V', V)
+
+# signal
+np.save('data/S', S)
+
+# filtering
+np.save('data/SIG', SIG)
