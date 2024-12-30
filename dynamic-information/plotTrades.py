@@ -1,7 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-t,X,Y,Z = np.load('data/tXYZ.npy')
+t = np.load('data/t.npy')
+X = np.load('data/X.npy')
+Y = np.load('data/Y.npy')
+Z = np.load('data/Z.npy')
 
 # plot
 fig, ax = plt.subplots(nrows = 2, ncols = 1,
