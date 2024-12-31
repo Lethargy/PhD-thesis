@@ -20,7 +20,6 @@ dp = norm.pdf(x = pp, loc = p0, scale = np.sqrt(lam));
 ub = P + 1.96 * lam * np.sqrt(SIG)
 lb = P - 1.96 * lam * np.sqrt(SIG)
 
-
 fig, ax = plt.subplots(nrows = 2, ncols = 1,
                        figsize = (4.5,3.5), dpi = 256,
                       sharex = 'col')
